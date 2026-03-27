@@ -60,20 +60,6 @@ Frontend
 - Частичный результат
 - Подсветка ошибок
 
-5. Код-песочница
-- Ограничение времени выполнения
-- Изоляция выполнения
-- Поддержка Python
-
-
-Геймификация
-
-XP система
-- Урок: +50 XP
-- Задание: +30 XP
-- Тест: +10 XP
-- Стрик: бонусы
-
 Уровни
 - Новичок -> Ученик -> Кодер -> Программист -> Мастер
 
@@ -121,32 +107,6 @@ Frontend
 - Docker Compose
 - Gunicorn
 
-
-Развёртывание
-
-1. Проверка:
-docker --version
-docker compose version
-
-2. Переход:
-cd <папка проекта>
-
-3. ENV:
-создать .env из .env.example
-
-4. Запуск:
-docker compose up --build -d
-
-5. Проверка:
-docker compose ps
-
-6. Health:
-http://localhost:8000/health/
-
-7. Demo:
-docker compose exec backend python manage.py seed_demo
-
-
 Основной сценарий
 
 1. Учитель
@@ -174,17 +134,6 @@ Frontend
 -> Redis (кэш)
 -> Runner (sandbox код)
 
-
-Что критично доделать
-
-- Реальный Judge0
-- Blockly интеграция
-- Monaco Editor
-- Object-level RBAC
-- E2E сценарии
-- Нагрузочное тестирование
-
-
 До уровня production / enterprise
 
 - PostgreSQL RLS
@@ -195,7 +144,7 @@ Frontend
 - Reverse proxy + TLS
 
 
-Позиционирование для защиты
+Вердикт:
 
 Наш продукт:
 - не просто LMS
@@ -204,11 +153,3 @@ Frontend
 - с игровой механикой
 - с контролем родителей
 - с масштабируемой архитектурой
-
-
-Преимущество перед классическими решениями
-- Blockly + код вместе
-- Teacher Studio (быстрое создание уроков)
-- Sandbox выполнение кода
-- Геймификация уровня Duolingo
-- Multi-tenant архитектура
